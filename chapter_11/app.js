@@ -54,7 +54,10 @@ const tick = () => {
   const mins = now.getMinutes();
   const secs = now.getSeconds();
 
-  console.log(hour, mins, secs);
+  const html = `<span>${hour}</span> :
+    <span>${mins}</span> :
+    <span>${secs}</span>`;
+
+  clock.innerHTML = html;
 };
 setInterval(tick, 1000);
-tick
