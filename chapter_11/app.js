@@ -54,7 +54,8 @@ const tick = () => {
   const mins = now.getMinutes();
   const secs = now.getSeconds();
 
-  const html = `<span>${hour}</span> :
+  const html = `
+  <span>${hour}</span> :
     <span>${mins}</span> :
     <span>${secs}</span>`;
 
